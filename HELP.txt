@@ -1,0 +1,69 @@
+Generation_Сloud mx my sx sy N		- create a cloud with specified parametrs: double mean X-axis - mx, double mean Y-axis - my, double distribution X-axis - sx, double distribution Y-axis - sy, int count of dots - N
+
+GC mx my sx sy N	- the same thing
+Generation_Cloud 	- Create a cloud with one dot and standard parametrs of distribution (mx = 0, my = 0, sx = 1, sy = 1, N = 100)
+GC 	- The same thing
+
+INFO	- Print on console count of clouds, count of dots in all clouds in field.
+HELP	- Print on console all command, which controller can do
+
+GetCloud N 		- Take N-th cloud in a row in buffer
+GetC N 	- The same thing
+GetCloud 	- Take all clouds from field in buffer
+GetC	-The same thing
+
+SetCloud N boo ch param1 param2	- Put N-th cloud in a row from buffer on field if boo = false, else put in field N-th cloud in a row from buffer with changes: if ch = 'r' - rotate cloud on param1 radian cloud; if ch = 's' - shift cloud on param1 at X-axis and param2 at Y-axis; if ch = 'h' - homothety with positive coefficient param1 -- on field
+
+SetC N  boo ch param1 param2		- The same thing
+
+ProtectON	- Activate protecting mode, in which you can't add or remove either clouds of dots
+PON	-The same thing
+ProtectOFF	- Disable protecting mode, it means, that you can add or remove either clouds of dots
+POFF	- The same thinf
+
+DoMatrix	- Construct distance matrix with real numbers
+DM	- The same thing
+
+Binary R	- Construct Binary Matrix (aka Adjacency matrix) where 2 dots are connected by an edge, if thier distance less or equal to R
+Bin R	- The same thing
+B R	- The same thing
+
+WaveAlgorithm		- Launch Wave Algorithm (aka Depth first search (DFS)), which searches for the connected component of the graph by the last Adjacency matrix
+WA	- The same thing
+
+DBSCAN k	- Launc DBSAN Algorithm, it is wave algorithm, in which before algorithm start, programm do mark up all dots on 3 type: core (dots, which have more or equal to k nighbor), pereferical(dots, which is not core, but have a core like neighbor) and dust(which is not core or pereferical).
+DB k	- The same thing
+
+PrintCluster	- Print all Cluster in file and do GNUPLOT-file.
+PC	- The same thing
+
+PrintDBSCAN	- PrintDNSCAN mark up on core, dust and pereferical dots
+PDBS	- The same thing
+
+SpanningTree	- Run spanning tree algorithm
+ST	- The same thing
+
+PrintTree	- Print tree after spanning tree algorithm
+PT	- The same thing
+
+Histogram	- Print histogram of length edges spanning tree
+HIST	- The same thing
+
+KM k		- Run algorithm of k-means with integer parameter k.
+KMeans	- The same thing
+
+EM k	- Run algorithm of expectation maximization whith integer parameter k (count of centers)
+EMalgorithm	-The same thing
+
+KMC k p 	- Run algorithm of K-means with cores with integers parameters k (count of clouds) and p (count of cores)
+KMCores k p	- The same thing
+
+FOREL R EPO	- Run algorithm of Formal Element with double parameter R (radius of formal element) and integer parameter EPO (count of epoch)
+FormalElement	- The same thing
+
+HIALG p	- Run Ierach algorithm with parameter p (count of clusters)
+HierarchAlgorithm p	- The same thing
+
+DeloneAlgorithm - Run Delone triangulization algorithm
+DEL - The same thing
+Delone - The same thing

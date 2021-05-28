@@ -1,2 +1,0 @@
-# neudachniki
-Mi neudachniki 

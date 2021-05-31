@@ -67,3 +67,5 @@ HierarchAlgorithm p	- The same thing
 DeloneAlgorithm - Run Delone triangulization algorithm
 DEL - The same thing
 Delone - The same thing
+
+INTERPOLATION - Run algorithm of interpolation to prediction vlaue of function in someone dot

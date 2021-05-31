@@ -14,3 +14,5 @@ At this moment here you can find:
 Also this algorithms implemented with used client-server technology.
 
 Among the other things it is present algorithm to prediction value of function by dots in neighborhood (with average coefficent r^2 equal to 0.78), with possibility to rejection of the forecast.
+
+How you can run algorithm you may find in HELP.txt.
